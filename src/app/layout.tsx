@@ -21,6 +21,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Beisya – Dermokozmetik Vegan Cilt Bakımı",
   description: "",
+  icons: {
+    icon: "/images/beisyalogo.jpeg",
+    apple: "/images/beisyalogo.jpeg",
+  },
+  openGraph: {
+    images: ["/images/beisyalogo.jpeg"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
