@@ -4,18 +4,18 @@
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', -apple-system, sans-serif;
 
-  /* ── #815B5B based warm rose palette ── */
-  --color-cream: #fdf7f5;
-  --color-beige: #f5ebe7;
-  --color-sand: #e8d5cf;
-  --color-mauve: #815B5B;
-  --color-mauve-light: #a37d7d;
-  --color-mauve-dark: #6b4545;
-  --color-rose: #c49a9a;
-  --color-brown: #815B5B;
-  --color-brown-dark: #5e3f3f;
-  --color-olive: #7a6565;
-  --color-sage: #d4b5b5;
+  /* ── Khaki / olive-green skincare palette ── */
+  --color-cream: #f5f0e8;
+  --color-beige: #ece5d8;
+  --color-sand: #d6ccb8;
+  --color-mauve: #6b7c5e;
+  --color-mauve-light: #8a9e78;
+  --color-mauve-dark: #4e5c42;
+  --color-rose: #a3b18a;
+  --color-brown: #5c5a45;
+  --color-brown-dark: #3a3828;
+  --color-olive: #6b6952;
+  --color-sage: #c4ccab;
 }
 
 /* ── Marquee ── */
@@ -62,12 +62,12 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #5a4545;
+  color: #4a4838;
 }
 
 ::selection {
-  background: rgba(129, 91, 91, 0.2);
-  color: #5e3f3f;
+  background: rgba(107, 124, 94, 0.2);
+  color: #3a3828;
 }
 
 /* ── Product image hover zoom ── */
