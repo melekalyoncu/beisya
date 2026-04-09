@@ -4,18 +4,18 @@
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', -apple-system, sans-serif;
 
-  /* ── Khaki / olive-green skincare palette ── */
-  --color-cream: #f5f0e8;
-  --color-beige: #ece5d8;
-  --color-sand: #d6ccb8;
-  --color-mauve: #6b7c5e;
-  --color-mauve-light: #8a9e78;
-  --color-mauve-dark: #4e5c42;
-  --color-rose: #a3b18a;
-  --color-brown: #5c5a45;
-  --color-brown-dark: #3a3828;
-  --color-olive: #6b6952;
-  --color-sage: #c4ccab;
+  /* ── Harmonious sage-green palette (hue ~130) ── */
+  --color-cream: #eef2ea;
+  --color-beige: #e0e8d8;
+  --color-sand: #c5d1b8;
+  --color-mauve: #7a8e6b;
+  --color-mauve-light: #95a888;
+  --color-mauve-dark: #5f7050;
+  --color-rose: #a8b89a;
+  --color-brown: #5f7050;
+  --color-brown-dark: #2f3a28;
+  --color-olive: #5b6b50;
+  --color-sage: #b3c4a3;
 }
 
 /* ── Marquee ── */
@@ -62,12 +62,12 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #4a4838;
+  color: #3a4632;
 }
 
 ::selection {
-  background: rgba(107, 124, 94, 0.2);
-  color: #3a3828;
+  background: rgba(122, 142, 107, 0.2);
+  color: #2f3a28;
 }
 
 /* ── Product image hover zoom ── */

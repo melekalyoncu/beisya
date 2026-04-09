@@ -203,19 +203,19 @@ export default function HomePage() {
       <section className="py-28 bg-[var(--color-cream)]">
         <div className="max-w-[1200px] mx-auto px-6">
           <RevealOnScroll>
-            <div className="bg-[var(--color-mauve)] rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+            <div className="bg-[var(--color-sage)] rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
               {/* Decorative elements */}
               <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/5 pointer-events-none" />
               <div className="absolute -bottom-10 -left-10 w-56 h-56 rounded-full bg-white/5 pointer-events-none" />
 
-              <span className="inline-block text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[var(--color-sage)] mb-4">{t("cta_tag")}</span>
-              <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">{t("cta_title")}</h2>
-              <p className="max-w-[460px] mx-auto text-[0.94rem] text-white/70 leading-relaxed mb-10">{t("cta_desc")}</p>
+              <span className="inline-block text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[var(--color-mauve-dark)] mb-4">{t("cta_tag")}</span>
+              <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-brown-dark)] mb-4">{t("cta_title")}</h2>
+              <p className="max-w-[460px] mx-auto text-[0.94rem] text-[var(--color-olive)] leading-relaxed mb-10">{t("cta_desc")}</p>
               <a
                 href="https://www.beisyaonline.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-10 py-4 rounded-full bg-white text-[var(--color-mauve)] text-sm font-semibold hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300"
+                className="inline-flex items-center px-10 py-4 rounded-full bg-[var(--color-mauve)] text-white text-sm font-semibold hover:bg-[var(--color-mauve-dark)] hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300"
               >
                 {t("cta_button")}
               </a>

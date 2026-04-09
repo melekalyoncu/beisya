@@ -25,13 +25,13 @@ export default function Header() {
       <nav
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-[0_1px_0_rgba(129,91,91,0.06)]"
-            : "bg-[var(--color-cream)]/90 backdrop-blur-sm"
+            ? "bg-[var(--color-mauve)] shadow-[0_2px_8px_rgba(0,0,0,0.15)]"
+            : "bg-[var(--color-mauve)]"
         }`}
       >
         <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center gap-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-semibold tracking-wider text-[var(--color-brown-dark)] shrink-0">
+          <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-semibold tracking-wider text-white shrink-0">
             <Image src="/images/logo.jpeg" alt="Beisya Logo" width={40} height={40} className="rounded-full object-cover w-10 h-10" />
             beisya
           </Link>
@@ -39,19 +39,19 @@ export default function Header() {
           {/* Desktop Nav */}
           <ul className="hidden lg:flex items-center gap-8 flex-1 justify-center list-none">
             <li>
-              <Link href="/" className="text-sm text-[var(--color-olive)] hover:text-[var(--color-brown-dark)] transition-colors">
+              <Link href="/" className="text-sm text-white/70 hover:text-white transition-colors">
                 {t("nav_home")}
               </Link>
             </li>
             <li>
-              <Link href="/hakkimizda" className="text-sm text-[var(--color-olive)] hover:text-[var(--color-brown-dark)] transition-colors">
+              <Link href="/hakkimizda" className="text-sm text-white/70 hover:text-white transition-colors">
                 {t("nav_about")}
               </Link>
             </li>
             <li className="relative group">
               <Link
                 href="/urunlerimiz"
-                className="text-sm text-[var(--color-olive)] hover:text-[var(--color-brown-dark)] transition-colors flex items-center gap-1"
+                className="text-sm text-white/70 hover:text-white transition-colors flex items-center gap-1"
               >
                 {t("nav_products")}
                 <svg className="w-2.5 h-2.5 transition-transform group-hover:rotate-180" viewBox="0 0 10 10" fill="none">
@@ -75,7 +75,7 @@ export default function Header() {
               </div>
             </li>
             <li>
-              <Link href="/iletisim" className="text-sm text-[var(--color-olive)] hover:text-[var(--color-brown-dark)] transition-colors">
+              <Link href="/iletisim" className="text-sm text-white/70 hover:text-white transition-colors">
                 {t("nav_contact")}
               </Link>
             </li>
@@ -86,7 +86,7 @@ export default function Header() {
             href="https://www.beisyaonline.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden lg:inline-flex items-center px-5 py-2 rounded-full bg-[var(--color-brown-dark)] text-white text-xs font-medium hover:bg-[var(--color-brown)] transition-colors"
+            className="hidden lg:inline-flex items-center px-5 py-2 rounded-full bg-white text-[var(--color-mauve)] text-xs font-medium hover:bg-white/90 transition-colors"
           >
             {t("nav_order")}
           </a>
@@ -97,9 +97,9 @@ export default function Header() {
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menü"
           >
-            <span className={`block w-[22px] h-[1.5px] bg-[var(--color-brown-dark)] transition-transform origin-center ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
-            <span className={`block w-[22px] h-[1.5px] bg-[var(--color-brown-dark)] transition-opacity ${mobileOpen ? "opacity-0" : ""}`} />
-            <span className={`block w-[22px] h-[1.5px] bg-[var(--color-brown-dark)] transition-transform origin-center ${mobileOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`} />
+            <span className={`block w-[22px] h-[1.5px] bg-white transition-transform origin-center ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
+            <span className={`block w-[22px] h-[1.5px] bg-white transition-opacity ${mobileOpen ? "opacity-0" : ""}`} />
+            <span className={`block w-[22px] h-[1.5px] bg-white transition-transform origin-center ${mobileOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`} />
           </button>
         </div>
 
@@ -144,7 +144,7 @@ export default function Header() {
               href="https://www.beisyaonline.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 flex items-center justify-center py-3 rounded-full bg-[var(--color-brown-dark)] text-white text-sm font-medium"
+              className="mt-4 flex items-center justify-center py-3 rounded-full bg-[var(--color-mauve)] text-white text-sm font-medium"
             >
               {t("nav_order")}
             </a>
