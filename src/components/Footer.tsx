@@ -23,7 +23,7 @@ export default function Footer() {
               {t("footer_slogan")}
             </p>
             <div className="flex items-center gap-3 mt-5 flex-wrap">
-              {(["badge_vegan", "badge_cruelty", "badge_derm"] as const).map((key) => (
+              {(["badge_vegan", "badge_cruelty"] as const).map((key) => (
                 <span key={key} className="text-[0.62rem] text-white/50 border border-white/15 rounded-full px-3 py-1">
                   {t(key)}
                 </span>

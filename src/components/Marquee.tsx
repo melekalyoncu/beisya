@@ -3,7 +3,7 @@
 const items = [
   "Vegan",
   "Cruelty-Free",
-  "Dermatoloji Onaylı",
+  "Sağlık Bakanlığı Onaylı",
   "pH Dengeli",
   "Doğal İçerik",
   "Paraben İçermez",

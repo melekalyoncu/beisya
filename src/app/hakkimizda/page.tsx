@@ -39,10 +39,13 @@ export default function AboutPage() {
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-brown-dark)] mb-8 leading-tight">Hakkımızda</h2>
             <p className="text-[0.94rem] leading-[1.85] mb-5 text-[var(--color-olive)]">
-              13 yılı aşkın süredir dermokozmetik alanında faaliyet gösteren firmamız, kendimiz ve sevdiklerimiz için güvenle kullanabileceğimiz ürünler üretme hedefiyle kurulmuştur. Kurulduğumuz günden bu yana uzman doktorlarla birlikte çalışarak, bilimsel bilgi ile doğanın gücünü bir araya getiren formüller geliştiriyoruz. Dünyaca ünlü ve etkisi kanıtlanmış bitkisel ekstraktlarla oluşturulan ürün yelpazemiz, cilt bakımınızı desteklerken aynı zamanda çeşitli cilt problemlerine karşı yardımcı çözümler sunmaktadır.
+              BEİSYA, T.C. Sağlık Bakanlığı onaylı, temiz içerikli dermokozmetik ürünleriyle cilt bakımında güven ve etkinliği bir araya getirir. Kadın, erkek ve çocuk cildine uyumlu olarak geliştirilen ürünlerimiz; vücudun her bölgesine özel çözümler sunarken, yalnızca bakım değil aynı zamanda destekleyici tedavi yaklaşımıyla fark yaratır.
             </p>
-            <p className="text-[0.94rem] leading-[1.85] mb-8 text-[var(--color-olive)]">
-              Ürünlerimiz eczanelerde satışa sunulmakta olup, güvenilirliği ve kalitesiyle tercih edilmektedir. Tüm ürünlerimiz vegan ve doğal içeriklerle formüle edilmiştir. AR-GE çalışmalarına aralıksız devam eden firmamız, insan sağlığına faydalı yenilikçi ürünler geliştirmeyi sürdürmektedir. Dünyanın ve Türkiye’nin her yerinden ulaşabileceğiniz Beisya ve Winactive ürünleriyle, doğallıkla yenilenmenizi hedefliyoruz.
+            <p className="text-[0.94rem] leading-[1.85] mb-5 text-[var(--color-olive)]">
+              Dermatologlar ve kadın doğum hekimleri tarafından tercih edilen BEİSYA, güçlü Ar-Ge altyapısı ve binlerce özgün formülüyle bilimsel temelli, yüksek performanslı kişisel bakım deneyimi sunar.
+            </p>
+            <p className="text-[0.94rem] leading-[1.85] mb-8 text-[var(--color-olive)] font-semibold">
+              BEİSYA – Bilimle Gelişen, Güvenle Kullanılan Bakım.
             </p>
             <Link
               href="/urunlerimiz"

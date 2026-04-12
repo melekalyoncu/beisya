@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import CertMarquee from "@/components/CertMarquee";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import { LangProvider } from "@/lib/LangContext";
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col bg-white text-gray-600 leading-relaxed">
         <LangProvider>
           <Header />
+          <CertMarquee />
           <main className="flex-1">{children}</main>
           <Footer />
           <BackToTop />
