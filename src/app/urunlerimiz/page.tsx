@@ -7,6 +7,7 @@ import { useLang } from "@/lib/LangContext";
 import { categories, products } from "@/lib/products";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import ProductCard from "@/components/ProductCard";
+import CertMarquee from "@/components/CertMarquee";
 
 const categoryImages: Record<string, string> = {
   sabun: "/images/baby sabun.jpeg",
@@ -48,6 +49,8 @@ function ProductsContent() {
           </RevealOnScroll>
         </div>
       </section>
+
+      <CertMarquee />
 
       {/* Category Cards */}
       <section className="py-10 bg-white border-b border-[var(--color-beige)]">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useLang } from "@/lib/LangContext";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import Counter from "@/components/Counter";
+import CertMarquee from "@/components/CertMarquee";
 
 export default function AboutPage() {
   const { t } = useLang();
@@ -26,6 +27,8 @@ export default function AboutPage() {
           </RevealOnScroll>
         </div>
       </section>
+
+      <CertMarquee />
 
       {/* Hakkımızda + Kurucu */}
       <section className="py-28 bg-white">

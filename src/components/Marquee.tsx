@@ -8,7 +8,6 @@ const items = [
   "Doğal İçerik",
   "Paraben İçermez",
   "SLS İçermez",
-  "İzmir",
 ];
 
 export default function Marquee() {

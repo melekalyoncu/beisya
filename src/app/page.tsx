@@ -6,7 +6,7 @@ import { useLang } from "@/lib/LangContext";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import Counter from "@/components/Counter";
 import Marquee from "@/components/Marquee";
-
+import CertMarquee from "@/components/CertMarquee";
 
 export default function HomePage() {
   const { t } = useLang();
@@ -62,7 +62,7 @@ export default function HomePage() {
               <div className="absolute inset-4 rounded-[2.5rem] bg-[var(--color-sage)] opacity-30 -z-10" />
               <div className="relative rounded-[2.5rem] overflow-hidden aspect-[3/4] shadow-2xl">
                 <Image
-                  src="/images/kadın.jpeg"
+                  src="/images/kadin.jpeg"
                   alt="Beisya cilt bakımı"
                   fill
                   className="object-cover"
@@ -89,7 +89,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Marquee />
+      <CertMarquee />
 
       {/* ═══ ABOUT SECTION ═══ */}
       <section className="py-28 bg-white">
@@ -143,6 +143,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Marquee />
 
       {/* ═══ WHAT MAKES US DIFFERENT ═══ */}
       <section className="py-28 bg-[var(--color-cream)]">

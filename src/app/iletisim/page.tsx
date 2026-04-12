@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useLang } from "@/lib/LangContext";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import CertMarquee from "@/components/CertMarquee";
 
 export default function ContactPage() {
   const { t } = useLang();
@@ -23,6 +24,8 @@ export default function ContactPage() {
           </RevealOnScroll>
         </div>
       </section>
+
+      <CertMarquee />
 
       {/* Content */}
       <section className="py-28 bg-white">

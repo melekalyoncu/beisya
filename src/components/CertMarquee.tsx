@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useLang } from "@/lib/LangContext";
 
 const certs = [
   { src: "/images/saglik-bakanligi.png", alt: "T.C. Sağlık Bakanlığı" },
@@ -10,12 +11,13 @@ const certs = [
 ];
 
 export default function CertMarquee() {
+  const { t } = useLang();
   const items = [...certs, ...certs, ...certs, ...certs];
 
   return (
-    <div className="py-10 overflow-hidden bg-[var(--color-cream)]">
+    <div className="border-t border-b border-[var(--color-sand)]/40 py-10 overflow-hidden bg-white">
       <p className="text-center text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[var(--color-mauve)] mb-6">
-        Sertifikalarımız
+        {t("cert_title")}
       </p>
       <div className="flex animate-[marquee_20s_linear_infinite] items-center">
         {items.map((cert, i) => (
