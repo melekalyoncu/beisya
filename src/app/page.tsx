@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[var(--color-cream)]">
+      <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-[var(--color-cream)]">
         {/* Decorative blobs */}
         <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[var(--color-sage)] opacity-20 blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full bg-[var(--color-sand)] opacity-25 blur-3xl pointer-events-none" />

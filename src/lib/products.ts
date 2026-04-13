@@ -9,6 +9,7 @@ export interface Product {
   price?: string;
   badge?: string;
   image: string;
+  image2?: string;
 }
 
 export const categories: { id: Category; nameKey: string; descKey: string; shortKey: string }[] = [
@@ -29,6 +30,7 @@ export const products: Product[] = [
     descKey: "prod_acnx_desc",
     tags: ["feat_oily", "feat_daily"],
     image: "/images/acnx sabun.jpeg",
+    image2: "/images/ekresimler/acnx2.png",
   },
   {
     id: "comedone-sabun",
@@ -37,6 +39,7 @@ export const products: Product[] = [
     descKey: "prod_comedone_soap_desc",
     tags: ["feat_deep", "feat_daily"],
     image: "/images/comedone sabun.jpeg",
+    image2: "/images/ekresimler/comedone2.png",
   },
   {
     id: "exe-sabun",
@@ -45,6 +48,7 @@ export const products: Product[] = [
     descKey: "prod_exe_soap_desc",
     tags: ["feat_sensitive", "feat_deep"],
     image: "/images/exe sabun.jpeg",
+    image2: "/images/ekresimler/exe2.png",
   },
   {
     id: "cay-agaci-sabun",
@@ -53,6 +57,7 @@ export const products: Product[] = [
     descKey: "prod_tea_soap_desc",
     tags: ["feat_herbal", "feat_daily"],
     image: "/images/çay ağacı sabun.jpeg",
+    image2: "/images/ekresimler/cay2.png",
   },
   {
     id: "tolerans-sabun",
@@ -61,6 +66,7 @@ export const products: Product[] = [
     descKey: "prod_tolerans_desc",
     tags: ["feat_sensitive", "feat_gentle"],
     image: "/images/tolerans sabun.jpeg",
+    image2: "/images/ekresimler/tolerans2.png",
   },
   {
     id: "baby-sabun",
@@ -70,6 +76,7 @@ export const products: Product[] = [
     tags: ["feat_gentle", "feat_daily"],
     badge: "badge_best",
     image: "/images/baby sabun.jpeg",
+    image2: "/images/ekresimler/baby2.png",
   },
 
   // YÜZ VE VÜCUT YIKAMA JELLERİ
@@ -81,6 +88,7 @@ export const products: Product[] = [
     tags: ["feat_herbal", "feat_daily"],
     badge: "badge_best",
     image: "/images/comedone şampuan.jpeg",
+    image2: "/images/ekresimler/comedoneşamp2.png",
   },
   {
     id: "exe-yuz-vucut-sampuan",
@@ -97,6 +105,7 @@ export const products: Product[] = [
     descKey: "prod_tea_shampoo_desc",
     tags: ["feat_herbal", "feat_oily"],
     image: "/images/çay ağacı şampuan.jpeg",
+    image2: "/images/ekresimler/çayşamp2.png",
   },
 
   // KREMLER
@@ -108,6 +117,7 @@ export const products: Product[] = [
     tags: ["feat_deep", "feat_daily"],
     badge: "badge_best",
     image: "/images/balans krem.jpeg",
+    image2: "/images/ekresimler/balans2.png",
   },
   {
     id: "terapi-krem",
@@ -116,6 +126,7 @@ export const products: Product[] = [
     descKey: "prod_terapi_desc",
     tags: ["feat_sensitive", "feat_deep"],
     image: "/images/terapi krem.jpeg",
+    image2: "/images/ekresimler/terapi2.png",
   },
 
   // LOSYON & TONİK
@@ -127,6 +138,7 @@ export const products: Product[] = [
     tags: ["feat_revive", "feat_daily"],
     badge: "badge_new",
     image: "/images/süper tonik.jpeg",
+    image2: "/images/ekresimler/süpertonik2.png",
   },
   {
     id: "exe-losyon",
@@ -135,6 +147,7 @@ export const products: Product[] = [
     descKey: "prod_exe_lotion_desc",
     tags: ["feat_deep", "feat_sensitive"],
     image: "/images/exe losyon.jpeg",
+    image2: "/images/ekresimler/exe losyon2.png",
   },
   {
     id: "yuz-vucut-sprey",
@@ -143,6 +156,7 @@ export const products: Product[] = [
     descKey: "prod_body_spray_desc",
     tags: ["feat_herbal", "feat_daily"],
     image: "/images/vücut sprey.jpeg",
+    image2: "/images/ekresimler/vücutsprey2.png",
   },
 
   // GENİTAL BAKIM
@@ -188,6 +202,7 @@ export const products: Product[] = [
     descKey: "prod_hair_shampoo_desc",
     tags: ["feat_herbal", "feat_vegan"],
     image: "/images/saç şampuan.jpeg",
+    image2: "/images/ekresimler/saçşamp2.png",
   },
   {
     id: "yogun-bakim-sac-sprey",
@@ -197,5 +212,6 @@ export const products: Product[] = [
     tags: ["feat_herbal", "feat_daily"],
     badge: "badge_new",
     image: "/images/saç sprey.jpeg",
+    image2: "/images/ekresimler/saçsprey2.png",
   },
 ];

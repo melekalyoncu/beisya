@@ -33,7 +33,7 @@ function ProductsContent() {
   const filtered = filter === "all" ? products : products.filter((p) => p.category === filter);
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       {/* Hero */}
       <section className="relative py-20 bg-[var(--color-cream)] overflow-hidden">
         <div className="absolute -top-20 -right-20 w-[350px] h-[350px] rounded-full bg-[var(--color-sand)] opacity-25 blur-3xl pointer-events-none" />
@@ -164,7 +164,7 @@ function ProductsContent() {
 
 export default function ProductsPage() {
   return (
-    <Suspense fallback={<div className="pt-16 min-h-screen" />}>
+    <Suspense fallback={<div className="pt-24 min-h-screen" />}>
       <ProductsContent />
     </Suspense>
   );

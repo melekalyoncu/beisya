@@ -11,7 +11,7 @@ export default function AboutPage() {
   const { t } = useLang();
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       {/* Hero */}
       <section className="relative py-28 bg-[var(--color-cream)] overflow-hidden">
         <div className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full bg-[var(--color-sand)] opacity-25 blur-3xl pointer-events-none" />

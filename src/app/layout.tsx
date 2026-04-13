@@ -23,16 +23,13 @@ export const metadata: Metadata = {
   description: "",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/images/beisyalogo-16.png", sizes: "16x16", type: "image/png" },
-      { url: "/images/beisyalogo-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/beisyalogo-48.png", sizes: "48x48", type: "image/png" },
-      { url: "/images/beisyalogo-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/logo.svg", type: "image/svg+xml" },
     ],
-    apple: "/apple-touch-icon.png",
+    shortcut: "/images/logo.svg",
+    apple: "/images/logo.svg",
   },
   openGraph: {
-    images: ["/images/beisyalogo.jpeg"],
+    images: ["/images/logo.svg"],
   },
 };
 

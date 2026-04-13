@@ -9,7 +9,7 @@ export default function ContactPage() {
   const { t } = useLang();
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       {/* Hero */}
       <section className="relative py-20 bg-[var(--color-cream)] overflow-hidden">
         <div className="absolute -top-20 -right-20 w-[350px] h-[350px] rounded-full bg-[var(--color-sand)] opacity-25 blur-3xl pointer-events-none" />

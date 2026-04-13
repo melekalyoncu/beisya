@@ -37,9 +37,20 @@ export default function ProductCard({ product, hidden }: Props) {
           src={product.image}
           alt={t(product.nameKey)}
           fill
-          className="object-contain p-8 product-image-zoom"
+          className={`object-contain p-8 product-image-zoom transition-opacity duration-500 ${
+            product.image2 ? "group-hover:opacity-0" : ""
+          }`}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
+        {product.image2 && (
+          <Image
+            src={product.image2}
+            alt={t(product.nameKey)}
+            fill
+            className="object-contain p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        )}
       </div>
 
       {/* Content */}

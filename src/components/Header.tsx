@@ -29,11 +29,10 @@ export default function Header() {
             : "bg-[var(--color-mauve)]"
         }`}
       >
-        <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center gap-8">
+        <div className="max-w-[1200px] mx-auto px-6 h-24 flex items-center gap-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-semibold tracking-wider text-white shrink-0">
-            <Image src="/images/logo.jpeg" alt="Beisya Logo" width={40} height={40} className="rounded-full object-cover w-10 h-10" />
-            beisya
+          <Link href="/" className="flex items-center shrink-0">
+            <Image src="/images/logo.svg" alt="Beisya Logo" width={96} height={96} className="object-contain w-24 h-24" />
           </Link>
 
           {/* Desktop Nav */}

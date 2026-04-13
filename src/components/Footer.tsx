@@ -15,9 +15,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-[1.2fr_2fr] gap-10 pb-12 border-b border-white/15">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2 font-serif text-2xl font-semibold tracking-wider text-white">
-              <Image src="/images/logo.jpeg" alt="Beisya Logo" width={36} height={36} className="rounded-full object-cover w-9 h-9" />
-              beisya
+            <Link href="/" className="flex items-center">
+              <Image src="/images/logo.svg" alt="Beisya Logo" width={80} height={80} className="object-contain w-20 h-20" />
             </Link>
             <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-xs">
               {t("footer_slogan")}

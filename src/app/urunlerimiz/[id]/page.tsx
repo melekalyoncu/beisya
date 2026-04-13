@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react";
+import { use, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLang } from "@/lib/LangContext";
@@ -11,10 +11,11 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
   const { id } = use(params);
   const { t } = useLang();
   const product = products.find((p) => p.id === id);
+  const [activeImage, setActiveImage] = useState(0);
 
   if (!product) {
     return (
-      <div className="pt-16 min-h-screen flex items-center justify-center bg-[var(--color-cream)]">
+      <div className="pt-24 min-h-screen flex items-center justify-center bg-[var(--color-cream)]">
         <div className="text-center">
           <h1 className="font-serif text-3xl text-[var(--color-brown-dark)] mb-4">Ürün Bulunamadı</h1>
           <Link href="/urunlerimiz" className="text-[var(--color-mauve)] hover:underline">
@@ -29,7 +30,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
   const relatedProducts = products.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 3);
 
   return (
-    <div className="pt-16">
+    <div className="pt-24">
       {/* Breadcrumb */}
       <div className="bg-[var(--color-cream)] border-b border-[var(--color-sand)]/30">
         <div className="max-w-[1200px] mx-auto px-6 py-4">
@@ -57,24 +58,43 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Image */}
             <RevealOnScroll>
-              <div className="relative aspect-square max-w-[500px] mx-auto w-full rounded-3xl overflow-hidden bg-[var(--color-beige)]">
-                {product.badge && (
-                  <span className={`absolute top-6 left-6 z-10 text-[0.65rem] font-bold tracking-wider uppercase px-4 py-2 rounded-full ${
-                    product.badge === "badge_new"
-                      ? "bg-[var(--color-mauve)] text-white"
-                      : "bg-[var(--color-brown-dark)] text-white"
-                  }`}>
-                    {t(product.badge)}
-                  </span>
+              <div className="max-w-[500px] mx-auto w-full">
+                <div className="relative aspect-square w-full rounded-3xl overflow-hidden bg-[var(--color-beige)]">
+                  {product.badge && (
+                    <span className={`absolute top-6 left-6 z-10 text-[0.65rem] font-bold tracking-wider uppercase px-4 py-2 rounded-full ${
+                      product.badge === "badge_new"
+                        ? "bg-[var(--color-mauve)] text-white"
+                        : "bg-[var(--color-brown-dark)] text-white"
+                    }`}>
+                      {t(product.badge)}
+                    </span>
+                  )}
+                  <Image
+                    src={activeImage === 1 && product.image2 ? product.image2 : product.image}
+                    alt={t(product.nameKey)}
+                    fill
+                    className="object-contain p-12 md:p-16"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
+                {product.image2 && (
+                  <div className="flex gap-3 mt-4 justify-center">
+                    {[product.image, product.image2].map((src, i) => (
+                      <button
+                        key={src}
+                        type="button"
+                        onClick={() => setActiveImage(i)}
+                        className={`relative w-20 h-20 rounded-xl overflow-hidden bg-[var(--color-beige)] border-2 transition-colors ${
+                          activeImage === i ? "border-[var(--color-mauve)]" : "border-transparent hover:border-[var(--color-sand)]"
+                        }`}
+                        aria-label={`${t(product.nameKey)} ${i + 1}`}
+                      >
+                        <Image src={src} alt="" fill className="object-contain p-2" sizes="80px" />
+                      </button>
+                    ))}
+                  </div>
                 )}
-                <Image
-                  src={product.image}
-                  alt={t(product.nameKey)}
-                  fill
-                  className="object-contain p-12 md:p-16"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
-                />
               </div>
             </RevealOnScroll>
 
